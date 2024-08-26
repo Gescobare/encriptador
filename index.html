@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <nav class="navigation-bar">
+        <img class="logo" src="assets/img/candado.png">
+    </nav>
+
+    <div class="container">
+        <div class="col-5">
+            <div class="textarea">
+                <textarea name="input" class="input" id="input" cols="30" rows="10"
+                    placeholder="Ingresa tu texto aquí"></textarea>
+                <div class="conditions">
+                    <p><span class="icon">&#9888;</span>Solo letras minúsculas y sin acentos.</p>
+                </div>
+                <div class="container-btn">
+                    <div class="col-5">
+                        <button class="encrypt" type="button" onclick="encrypt()">
+                            &#9733; Encriptar
+                        </button>
+                    </div>
+                    <div class="col-5">
+                        <button id="decrypt" class="decrypt" type="button" onclick="decrypt()" disabled>
+                        &#9734; Desencriptar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="msj">
+                <img class="img-responsive" src="assets/img/blue.png" alt="" id="img" />
+                <div class="notification" id="notification">
+                    <h2 id="title">Ningún mensaje fue encontrado</h2>
+                    <p id="txt">
+                        Ingresa el texto que deseas encriptar o desencriptar
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+
+</html>
